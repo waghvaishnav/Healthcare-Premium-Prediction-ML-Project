@@ -102,19 +102,24 @@ def handle_scaling(age, df):
     cols_to_scale = scaler_object['cols_to_scale']
     scaler = scaler_object['scaler']
 
-    df['income_level'] = None # since scaler object expects income_level supply it. This will have no impact on anything
+    df['income_level'] = 0
     df[cols_to_scale] = scaler.transform(df[cols_to_scale])
 
     df.drop('income_level', axis='columns', inplace=True)
 
     return df
 
+
 def predict(input_dict):
     input_df = preprocess_input(input_dict)
 
     if input_dict['Age'] <= 25:
-        prediction = model_young.predict(input_df)
+        model = model_young
     else:
-        prediction = model_rest.predict(input_df)
+        model = model_rest
+
+    input_df = input_df.reindex(columns=model.feature_names_in_, fill_value=0)
+
+    prediction = model.predict(input_df)
 
     return int(prediction[0])
