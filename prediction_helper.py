@@ -95,7 +95,7 @@ def preprocess_input(input_dict):
 def handle_scaling(age, df):
     # scale age and income_lakhs column
     if age <= 25:
-        scaler_object = scaler_young
+        scaler_object = scaler_young_gr
     else:
         scaler_object = scaler_rest
 
@@ -113,7 +113,7 @@ def predict(input_dict):
     input_df = preprocess_input(input_dict)
 
     if input_dict['Age'] <= 25:
-        prediction = model_young.predict(input_df)
+        prediction = model_young_gr.predict(input_df)
     else:
         prediction = model_rest.predict(input_df)
 
