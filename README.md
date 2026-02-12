@@ -73,7 +73,7 @@ The dataset contains customer attributes used to predict healthcare insurance pr
 
 # 6. Installation / Setup
 Step 1: Clone the repository
-git clone https://github.com/waghvaishnav/healthcare-premium-prediction.git
+git clone https://github.com/waghvaishnav/Healthcare-Premium-Prediction-ML-Project.git
 cd healthcare-premium-prediction
 
 Step 2: Create virtual environment (optional)
@@ -99,6 +99,8 @@ The model returns the estimated healthcare premium instantly
 This app demonstrates real-time ML inference.
 
 # 8. Screenshots / Demo
+
+![App Screenshot](https://raw.githubusercontent.com/waghvaishnav/Healthcare-Premium-Prediction-ML-Project/714c80662a1b71d5c8508b5a2db749d0447307ab/Screenshot%202026-02-12%20231139.png)
 
 # 9. Results / Model Performance
 
