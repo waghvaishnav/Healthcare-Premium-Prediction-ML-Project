@@ -1,8 +1,8 @@
 # Healthcare-Premium-Prediction-ML-Project
 machine learning healthcare premium prediction app
 
-🏥 Healthcare Premium Prediction (Regression)
-1. Project Overview
+# 🏥 Healthcare Premium Prediction (Regression)
+# 1. Project Overview
 
 This project predicts healthcare insurance premiums using machine learning. The goal is to estimate a person’s premium amount based on demographic and lifestyle features such as age, BMI, smoking habits, and other relevant factors.
 
@@ -10,13 +10,13 @@ The project includes the full ML pipeline: data collection, cleaning, explorator
 
 To improve prediction accuracy, the dataset is segmented by age group and separate models are trained for young and adult customers.
 
-2. Problem Statement
+# 2. Problem Statement
 
 Healthcare insurance companies need accurate premium predictions to reduce financial risk and provide fair pricing to customers.
 
 Traditional pricing methods may fail to capture complex relationships between customer attributes and premium costs. This project aims to build a regression model that predicts insurance premiums with high accuracy, helping insurers make data-driven pricing decisions.
 
-3. Features
+# 3. Features
 
 End-to-end machine learning pipeline
 
@@ -42,7 +42,7 @@ Model persistence using Joblib
 
 Deployable ML application
 
-4. Tech Stack
+# 4. Tech Stack
 
 Python
 
@@ -60,30 +60,20 @@ Joblib
 
 Streamlit
 
-5. Dataset Information
+# 5. Dataset Information
 
-Initial dataset:
+Initial dataset : premiums.xlsx
 
-premiums.xlsx
+After segmentation: 
+1. Young customers (age ≤ 25): premiums_young_with_gr
 
-
-After segmentation:
-
-Young customers (age ≤ 25):
-
-premiums_young_with_gr
-
-
-Adult customers (age > 25):
-
-premiums_rest
-
+2. Adult customers (age > 25): premiums_rest
 
 The dataset contains customer attributes used to predict healthcare insurance premiums.
 
-6. Installation / Setup
+# 6. Installation / Setup
 Step 1: Clone the repository
-git clone https://github.com/your-username/healthcare-premium-prediction.git
+git clone https://github.com/waghvaishnav/healthcare-premium-prediction.git
 cd healthcare-premium-prediction
 
 Step 2: Create virtual environment (optional)
@@ -96,7 +86,7 @@ pip install -r requirements.txt
 Step 4: Run the Streamlit app
 streamlit run main.py
 
-7. Usage
+# 7. Usage
 
 Open the Streamlit app in your browser
 
@@ -108,27 +98,11 @@ The model returns the estimated healthcare premium instantly
 
 This app demonstrates real-time ML inference.
 
-8. Screenshots / Demo
+# 8. Screenshots / Demo
 
-Add screenshots of:
+# 9. Results / Model Performance
 
-EDA visualizations
-
-Model prediction interface
-
-Streamlit app homepage
-
-Prediction result output
-
-(Upload images in a /screenshots folder and link them here)
-
-Example:
-
-![App Screenshot](screenshots/app_home.png)
-
-9. Results / Model Performance
-
-Model accuracy: 98%
+# Model accuracy: 98%
 
 Regression-based premium prediction
 
@@ -146,7 +120,7 @@ Younger customers show different premium patterns
 
 Segmented modeling improves prediction stability
 
-10. Future Improvements
+# 10. Future Improvements
 
 Add more real-world healthcare variables
 
