@@ -15,33 +15,27 @@ To improve prediction accuracy, the dataset is segmented by age group and separa
 Healthcare insurance companies need accurate premium predictions to reduce financial risk and provide fair pricing to customers.
 
 Traditional pricing methods may fail to capture complex relationships between customer attributes and premium costs. This project aims to build a regression model that predicts insurance premiums with high accuracy, helping insurers make data-driven pricing decisions.
-
+## ⚙️ Project Workflow
+1. Data cleaning & preprocessing
+2. Exploratory data analysis (EDA)
+3. Feature engineering
+5. Model training (Logistic Regression / XGBoost)
+6. Model evaluation (ROC-AUC, KS, Gini)
+7. Model serialization
+8. Streamlit deployment
 # 3. Features
 
-End-to-end machine learning pipeline
-
-Data cleaning and preprocessing
-
-Exploratory Data Analysis (EDA)
-
-Feature engineering
-
-Model training and hyperparameter tuning
-
-Age-based model segmentation
-
-Error analysis
-
-98% prediction accuracy
-
-Interactive Streamlit web app
-
-Real-time premium prediction
-
-Model persistence using Joblib
-
-Deployable ML application
-
+-age
+-number_of_dependents
+- income_in_lakhs
+- genetic_risk
+- gender
+- smoking_status
+- marital_status
+- region
+- medical_history
+- employment_status
+- 
 # 4. Tech Stack
 
 Python
@@ -121,19 +115,3 @@ Smoking and BMI significantly impact premiums
 Younger customers show different premium patterns
 
 Segmented modeling improves prediction stability
-
-# 10. Future Improvements
-
-Add more real-world healthcare variables
-
-Use deep learning regression models
-
-Build REST API for production deployment
-
-Add database integration
-
-Improve UI/UX of Streamlit app
-
-Deploy on cloud with CI/CD pipeline
-
-Add model monitoring and retraining
